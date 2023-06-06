@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todohtt/Verify/login.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -41,12 +42,17 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(
               height: 130,
             ),
-            Text(
-              "Sign In",
-              style: TextStyle(
-                  fontSize: 25,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold),
+            TextButton(onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => LogInScreen()));
+            },
+              child: Text(
+                "Sign In",
+                style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+              ),
             ),
           ],
         ),

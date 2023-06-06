@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'splash_screen.dart';
+import 'package:todohtt/Verify/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,8 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
-      title: 'To Do app test',
-      home: const SplashScreen(),
+      title: 'To Do app ',
+      home: const LogInScreen(),
     );
   }
 }
